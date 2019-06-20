@@ -20,23 +20,27 @@
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
+            width: auto;
             
             -webkit-flex-flow: row wrap;
             flex: row wrap;
-            justify-content: center
+            justify-content: center;
         }
         .flex-item {
             background: #228596;
             padding: 10px;
             margin: 10px;
-            width: 200px;
             height: 200px;
+            flex: 0 0 200px;
 
             line-height: 380px;
             font-family: 'Libre Baskerville';
             color: white;
-            font-size: 1em;
+            font-size:1.5em;
             text-align: right
+        }
+        .flex-item:hover {
+            background: #155c68
         }
     </style>
 </head>
