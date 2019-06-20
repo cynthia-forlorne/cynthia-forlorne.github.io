@@ -4,12 +4,39 @@
     
     <style>
         h1 {
-            color: #228596
-            font-family: 'Libre Baskerville'
+            color: #228596;
+            font-family: 'Libre Baskerville';
+            font-size: 5em;
             font-weight: 700;
+            text-align: center
         }
         p {
             font-family: 'Libre Baskerville'
+        }
+        .flex-container {
+            list-style: none;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            
+            -webkit-flex-flow: row wrap;
+            flex: row wrap;
+            justify-content: center
+        }
+        .flex-item {
+            background: #228596;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+
+            line-height: 380px;
+            font-family: 'Libre Baskerville';
+            color: white;
+            font-size: 1em;
+            text-align: right
         }
     </style>
 </head>
@@ -17,6 +44,11 @@
 <html>
 <body>
     <h1>Cynthia Forlorne</h1>
-    <p>Welcome to my first homepage! 10 years late due to crippling depression and dysphoria!</p>
+    <ul class="flex-container">
+        <li class="flex-item">Photography</li>
+        <li class="flex-item">Music</li>
+        <li class="flex-item">Sheet music</li>
+        <li class="flex-item">Graphics</li>
+    </ul>
 </body>
 </html>
